@@ -31,6 +31,11 @@ Verschachtelungen über die zweite Ebene hinaus werden aktuell nicht unterstütz
 
 ## Usage
 
+### Dependencies
+* Python 3
+* Lokale LaTeX-Installation mit XeTeX
+* HTWBerlin Office Schriftart
+
 Um das Tool nutzen zu können, muss erst eine Python-Environment eingerichtet werden. Um alle nötigen Packages in 
 einer lokalen Environment zu installieren, können folgende Befehle im Projektordner ausgeführt werden:
 
