@@ -7,16 +7,16 @@ if [ $# -ne 1 ]; then
   exit
 fi
 
-chmod +x ./generate-tex.py
+workingDir="${SIFOGES_DIR:-.}"
 
-./generate-tex.py $1
+./generate-tex.py "$workingDir/$1"
 
 temp_dir=.tmp-xetex
 
-mkdir $temp_dir
-xelatex -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=$temp_dir main.tex
-xelatex -file-line-error -interaction=nonstopmode -synctex=1 -output-directory=$temp_dir main.tex
+mkdir "$temp_dir"
+xelatex -file-line-error -interaction=nonstopmode -synctex=1 -output-directory="$temp_dir" main.tex
+xelatex -file-line-error -interaction=nonstopmode -synctex=1 -output-directory="$temp_dir" main.tex
 
-mv $temp_dir/main.pdf ./main.pdf
-rm -r $temp_dir
+mv "$temp_dir/main.pdf" "$workingDir/main.pdf"
+rm -r "$temp_dir"
 rm main.tex

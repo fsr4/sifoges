@@ -59,3 +59,9 @@ Die resultierende PDF-Datei wird unter dem Namen `main.pdf` im Projektordner ges
 
 *Note: Die Skripte generieren ein paar temporäre Dateien in einem Unterordner namens `.tmp-xetex`. 
 Dieser wird nach erfolgreichem Abschluss des Skripts automatisch gelöscht.*
+
+## Font Copyright
+Die in diesem Repository enthaltene Schrift "HTWBerlin" wurde von Jürgen Huber und Malte Herok entwickelt und steht 
+unter der Lizenz [CC-BY-NC-ND-4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode) für hochschulinterne 
+und hochschulöffentliche Zwecke zur Verfügung. Die Nutzung außerhalb des in der 
+[EULA](https://corporatedesign.htw-berlin.de/schrift-farbe/schriften/eula/) genannten Umfangs ist nicht gestattet.
