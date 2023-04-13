@@ -31,7 +31,19 @@ Verschachtelungen über die zweite Ebene hinaus werden aktuell nicht unterstütz
 
 ## Usage
 
-### Dependencies
+### Docker Image
+Das Docker Image (OCI) kann einfach mit diesem einen Befehl ausgeführt werden:
+```shell
+docker run --rm -v <path to working dir>:/app/data ghcr.io/fsr4/sifoges <input filename>
+```
+`<path to working dir>` ist dabei der Pfad zu dem Ordner, in dem die Input-Datei liegt und in dem die generierte 
+PDF-Datei abgespeichert werden soll. `<input filename>` gibt den Namen der Input-Datei im Ordner an.
+
+### "Build from source"
+Falls man eine Abneigung gegen OCIs hat, kann man natürlich auch alle Dependencies selbst installieren und das Skript 
+so ausführen. Hier der grobe Prozess dafür:
+
+#### Dependencies
 * Python 3
 * Lokale LaTeX-Installation mit XeTeX
 * HTWBerlin Office Schriftart
